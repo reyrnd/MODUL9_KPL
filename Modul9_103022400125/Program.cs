@@ -70,10 +70,10 @@ class Program
             Console.WriteLine($"Pilih metode transfer: ");
             bankConfig.config.methods.ForEach(method => Console.WriteLine(method));
 
-            Console.WriteLine($"Please type {bankConfig.config.confirmation.en} to confirm the transaction:");
+            Console.WriteLine($"Ketik {bankConfig.config.confirmation.id} untuk mengkonfirmasi transaksi:");
             method = int.Parse(Console.ReadLine());
 
-            Console.Write("The transfer is completed using ");
+            Console.Write("Proses transfer berhasil menggunakan ");
 
             if (method == 1)
             {
